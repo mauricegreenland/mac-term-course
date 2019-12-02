@@ -1,2 +1,0 @@
-New text file edited with nano command
-Second new text file saved with nano
