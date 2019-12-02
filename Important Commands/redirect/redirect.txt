@@ -1,0 +1,21 @@
+# Important Commands For Shell Scripting
+# Section 2
+#
+# REDIRECT
+# Your branch is up to date with 'origin/master'.
+#
+
+We use the GREATER THAN > sign to redirect output from one command to another command.
+
+EG: echo "redirect this output to a text file" > newfile.txt
+
+# Redirect will OVERWRITE content of an existing file
+# To APPEND the content of a file use the DOUBLE GREATER THAN command >>
+
+EG: echo "append this line to the end of the newfile" >> newfile.txt
+
+EG2: ls -l . >> newtext.txt
+
+# You can cancotonate two files one after another and then redirect the output to a new file
+EG3: cat text1.txt text2.txt > file3.txt
+
