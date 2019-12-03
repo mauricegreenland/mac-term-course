@@ -1,21 +1,40 @@
+
 # Important Commands For Shell Scripting
 # Section 2
 #
 # REDIRECT
-# Your branch is up to date with 'origin/master'.
-#
+# 
+#########
 
 We use the GREATER THAN > sign to redirect output from one command to another command.
 
-EG: echo "redirect this output to a text file" > newfile.txt
+EG1: echo "redirect this output to a text file" > newfile.txt
+
+We use the LESS THAN < sign to use contents of a file as input to the command
 
 # Redirect will OVERWRITE content of an existing file
 # To APPEND the content of a file use the DOUBLE GREATER THAN command >>
 
-EG: echo "append this line to the end of the newfile" >> newfile.txt
+EG2: echo "append this line to the end of the newfile" >> newfile.txt
 
-EG2: ls -l . >> newtext.txt
+EG3: ls -l . >> newtext.txt
 
-# You can cancotonate two files one after another and then redirect the output to a new file
-EG3: cat text1.txt text2.txt > file3.txt
+# You can CANCOTONATE two files one after another and then redirect the output to a new file
+EG4: cat text1.txt text2.txt > file3.txt
 
+Table:
+command > file [Redirection of output]
+command >> file [Appends output to specified file]
+command < file [Redirection of input]
+command 2 > file [Redirection of error messages (stdin, stdout AND stderr are associated with numerical values 0,1,2 - called file descriptors)]
+
+Some examples:
+
+1 - Send the output produced by the WHO command to the file called wholist.txt
+who > wholist.txt
+
+2 - To create a file called demo.txt
+cat > demo.txt
+
+3 - To run the program myprog taking input from the file called data and sending the output to the file called results
+myprog < data.txt >results.txt

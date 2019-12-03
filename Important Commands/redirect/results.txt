@@ -1,0 +1,3 @@
+redirect this output to a text file
+append this line to the end of the text file
+append this line to the end of the text file
